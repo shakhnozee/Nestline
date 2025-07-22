@@ -23,6 +23,7 @@ import Add from "@/seller/sections/add";
 import AnaliticPage from "@/seller/sections/analitics";
 import SellerSettingsPage from "@/seller/sections/settings";
 import LoginPage from "@/seller/auth/login";
+import Verification from "@/seller/auth/verification";
 
 
 export const UserRoutes: FunctionComponent = () => {
@@ -80,6 +81,20 @@ export const UserRoutes: FunctionComponent = () => {
               </div>
               <div className="relative z-10 bg-white p-8 rounded-2xl shadow-2xl w-full max-w-md transform animate-fade-in transition-all">
                 <RegisterPage />
+              </div>
+            </div>
+          }
+        />
+
+        <Route path="/seller/auth/verification"
+          element={
+            <div className="relative min-h-screen flex items-center justify-center px-4">
+              <div className="absolute inset-0 bg-[url('/auth/dom.jpg')] bg-cover bg-center blur-sm"></div>
+              <div className="absolute inset-0 bg-black/30">
+                <Header />
+              </div>
+              <div className="relative z-10 bg-white p-8 rounded-2xl shadow-2xl w-full max-w-md transform animate-fade-in transition-all">
+                <Verification />
               </div>
             </div>
           }
